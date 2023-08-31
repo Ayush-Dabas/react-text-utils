@@ -13,6 +13,25 @@ function App() {
     setInputText(up);
   }
 
+  function lowerCase({ inputText }) {
+    let dwn = inputText.toString().toLowerCase();
+    setInputText(dwn);
+  }
+
+  function clearText() {
+    setInputText("");
+  }
+
+  function copyText({ inputText }) {
+    let copiedText = inputText;
+    navigator.clipboard.writeText(copiedText);
+  }
+
+  function removeSpace({ inputText }) {
+    let text = inputText.replace(/\s+/g, " ").trim();
+    setInputText(text);
+  }
+
   return (
     <div className="App">
       <h1>TextUtils - Word Counter, Character Counter, Remove Extra Space</h1>
@@ -30,10 +49,27 @@ function App() {
         >
           Convert to Uppercase
         </button>
-        <button className="functionalBtns">Convert to Lowercase</button>
-        <button className="functionalBtns">Clear Text</button>
-        <button className="functionalBtns">Copy Text</button>
-        <button className="functionalBtns">Remove Extra Spaces</button>
+        <button
+          className="functionalBtns"
+          onClick={() => lowerCase({ inputText })}
+        >
+          Convert to Lowercase
+        </button>
+        <button className="functionalBtns" onClick={() => clearText()}>
+          Clear Text
+        </button>
+        <button
+          className="functionalBtns"
+          onClick={() => copyText({ inputText })}
+        >
+          Copy Text
+        </button>
+        <button
+          className="functionalBtns"
+          onClick={() => removeSpace({ inputText })}
+        >
+          Remove Extra Spaces
+        </button>
       </main>
       <section className="summary">
         <h3>Summary of your text</h3>
