@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState } from "react";
 
 function App() {
@@ -35,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <h1>TextUtils - Word Counter, Character Counter, Remove Extra Space</h1>
-      <main className="inputArea">
+      <main className="border inputArea">
         <h3>Enter Your Text Here: </h3>
         <input
           type="text"
@@ -73,9 +72,15 @@ function App() {
       </main>
       <section className="summary">
         <h3>Summary of your text</h3>
-        <p id="numWord">Number of words: #number</p>
-        <p id="numChar">Number of Characters: #char</p>
-        <p id="readTime">Reading Time: #time</p>
+        <p className="sumP" id="numWord">
+          Number of words: #number
+        </p>
+        <p className="sumP" id="numChar">
+          Number of Characters: #char
+        </p>
+        <p className="sumP" id="readTime">
+          Reading Time: #time
+        </p>
       </section>
       <section className="display">{inputText}</section>
     </div>
