@@ -7,6 +7,12 @@ function App() {
   const handleInput = (e) => {
     setInputText(e.target.value);
   };
+
+  function toUppercase({ inputText }) {
+    let up = inputText.toString().toUpperCase();
+    setInputText(up);
+  }
+
   return (
     <div className="App">
       <h1>TextUtils - Word Counter, Character Counter, Remove Extra Space</h1>
@@ -18,7 +24,12 @@ function App() {
           placeholder="Text"
           value={inputText}
         />
-        <button className="functionalBtns">Convert to Uppercase</button>
+        <button
+          className="functionalBtns"
+          onClick={() => toUppercase({ inputText })}
+        >
+          Convert to Uppercase
+        </button>
         <button className="functionalBtns">Convert to Lowercase</button>
         <button className="functionalBtns">Clear Text</button>
         <button className="functionalBtns">Copy Text</button>
