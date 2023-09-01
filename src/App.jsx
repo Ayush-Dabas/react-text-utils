@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [inputText, setInputText] = useState("");
