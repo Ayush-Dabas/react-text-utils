@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -32,8 +34,10 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>TextUtils - Word Counter, Character Counter, Remove Extra Space</h1>
+    <div className="App p-3 bg-white shadow rounded-lg">
+      <h1 className="bg-yellow-600 py-4">
+        TextUtils - Word Counter, Character Counter, Remove Extra Space
+      </h1>
       <main className="border inputArea">
         <h3>Enter Your Text Here: </h3>
         <input
