@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-text-utils/static/css/main.d1be94f2.css",
+    "main.js": "/react-text-utils/static/js/main.de2a6dc5.js",
+    "index.html": "/react-text-utils/index.html",
+    "main.d1be94f2.css.map": "/react-text-utils/static/css/main.d1be94f2.css.map",
+    "main.de2a6dc5.js.map": "/react-text-utils/static/js/main.de2a6dc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1be94f2.css",
+    "static/js/main.de2a6dc5.js"
+  ]
+}
