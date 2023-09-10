@@ -97,9 +97,9 @@ function App() {
           Reading Time: #time
         </p> */}
       </section>
-      {/* <section className="px-20 py-1 text-[20px] shadow-2xl">
+      <section className="px-20 py-1 text-[20px] shadow-2xl">
         {inputText}
-      </section> */}
+      </section>
     </div>
   );
 }
